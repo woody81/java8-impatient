@@ -10,8 +10,9 @@ public class Exercise2 {
 	@Test
 	public void perform() {
 		File parentDir = new File(".");
-		File[] subDirs = parentDir.listFiles(File::isDirectory);
-		System.out.println(Arrays.toString(subDirs));
+		System.out.println(Arrays.toString(parentDir.listFiles(File::isDirectory)));
+		System.out.println("---------------");
+		System.out.println(Arrays.toString(parentDir.listFiles(dir -> dir.isDirectory())));
 	}
 
 }
