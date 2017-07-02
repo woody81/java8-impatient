@@ -5,10 +5,10 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
-public class Exercise2 {
+public class Exercise02 {
 	
 	@Test
-	public void perform() {
+	public void run() {
 		File parentDir = new File(".");
 		System.out.println(Arrays.toString(parentDir.listFiles(File::isDirectory)));
 		System.out.println("---------------");
