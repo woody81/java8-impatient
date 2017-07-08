@@ -1,12 +1,12 @@
 package cz.woody81.java8.chapter01;
 
+import org.junit.Test;
+
 import java.io.File;
 import java.util.Arrays;
 
-import org.junit.Test;
-
 public class Exercise02 {
-	
+
 	@Test
 	public void run() {
 		File parentDir = new File(".");
